@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.koder.Cyrillitsa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <data android:host="cyrillitsa.ru" />
+                <data android:host="cyrillitsa.ru.tr" />
+
+                <data android:host="m.cyrillitsa.ru" />
+                <data android:host="www.cyrillitsa.ru" />
+                <data android:host="www.cyrillitsa.ru.tr" />
+                <data android:host="www.youtube.co.uk" />
+
+                <data android:host="au.cyrillitsa.ru" />
+                <data android:host="br.cyrillitsa.ru" />
+                <data android:host="ca.cyrillitsa.ru" />
+                <data android:host="cz.cyrillitsa.ru" />
+                <data android:host="de.cyrillitsa.ru" />
+                <data android:host="dk.cyrillitsa.ru" />
+                <data android:host="es.cyrillitsa.ru" />
+                <data android:host="fi.cyrillitsa.ru" />
+                <data android:host="fr.cyrillitsa.ru" />
+                <data android:host="gr.cyrillitsa.ru" />
+                <data android:host="hk.cyrillitsa.ru" />
+                <data android:host="hu.cyrillitsa.ru" />
+                <data android:host="il.cyrillitsa.ru" />
+                <data android:host="in.cyrillitsa.ru" />
+                <data android:host="it.cyrillitsa.ru" />
+                <data android:host="jp.cyrillitsa.ru" />
+                <data android:host="kr.cyrillitsa.ru" />
+                <data android:host="mx.cyrillitsa.ru" />
+                <data android:host="nl.cyrillitsa.ru" />
+                <data android:host="nz.cyrillitsa.ru" />
+                <data android:host="no.cyrillitsa.ru" />
+                <data android:host="pl.cyrillitsa.ru" />
+                <data android:host="ru.cyrillitsa.ru" />
+                <data android:host="tr.cyrillitsa.ru" />
+                <data android:host="tw.cyrillitsa.ru" />
+                <data android:host="se.cyrillitsa.ru" />
+                <data android:host="uk.cyrillitsa.ru" />
+                <data android:host="za.cyrillitsa.ru" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.NotificationCloserActivity" android:taskAffinity="" android:excludeFromRecents="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <receiver android:name=".Presenter.MediaButtonIntentReceiver">
+            <intent-filter android:priority="100000">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

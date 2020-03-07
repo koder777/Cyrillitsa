@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.martykan.webtube.MainActivity">
+
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/refresh"
+        android:icon="@drawable/refresh"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/action_bookmarks"
+        android:title="@string/bookmarks"
+        android:icon="@drawable/star"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_web"
+        android:title="@string/openInBrowser"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_set_as_home"
+        android:title="@string/set_as_home"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Кириллица</string>
+
+    <string name="home">Домой</string>
+    <string name="refresh">Обновить</string>
+    <string name="bookmarks">Закладки</string>
+    <string name="openInBrowser">Открыть в браузере</string>
+
+    <string name="acceptCookies">Принять куки</string>
+    <string name="share">Раздать</string>
+
+    <string name="menu">Меню</string>
+
+
+    <string name="enable">Включить</string>
+
+    <string name="addPage">Добавить эту страницу</string>
+    <string name="removePage">Удалить эту страницу</string>
+
+    <string name="errorNoInternet">Нет связи с интернетом.</string>
+
+    <string name="error">Ошибка</string>
+
+
+
+    <string name="share_with">Раздать</string>
+
+    <string name="homePageSet">Сейчас  домашней страницей является выбранная вами страница</string>
+    <string name="homePageHelp">If you want to change the homepage, just hold the Home button and it changes to the current opened page.</string>
+    <string name="set_as_home">Установить как домашнюю</string>
+    <string name="playInBackground">Проигрывать в фоновом режиме</string>
+    <string name="download">Загрузка</string>
+
+</resources>
